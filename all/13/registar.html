@@ -1,0 +1,135 @@
+<html>
+
+<form action=second method=get>
+<marquee><h1><center>Employee Registration Form</center></h1></marquee><hr color=blue>
+<Head>
+
+<body background="fd.jpg">
+<title> E-LIBRARY REGISTRATION</title>
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: pink;
+}
+</style>
+</head>
+<body>
+
+<ul>
+ <li><a href="login.html" target=f4>LOGIN</a></li>
+<li><a href="registar.html" target=f4>REGISTER</a></li>
+<li><a href="books.html" target=f4>BOOKS</a></li>	
+<li><a href="contactus.html" target=f4>CONTACTUS</a></li>
+  
+</ul>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="Assign2.css">
+<Title>Assignment 2- MphasisRegistrationForm</Title>
+</Head>
+<Body>
+<form action= assignment2.jsp>
+<h4>Fields marked (*) are required</h4>
+<fieldset>
+<legend>Personal Details</legend>
+<table>
+<tr><td>Enter your First Name<td><input type=text name=t1 size=20 placeholder="Enter your name"required></tr>
+<tr><td>Enter your Last Name<td><input type=text name=t2 size=20 placeholder="Enter your lastname" required></tr>
+<tr><td>Enter your DTOB<td><Input type=datetime-local name=t3 size=20 placeholder="Enter your DTOB"></tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>Email Validation</legend>
+<table>
+<tr><td>Email*<td><input type=text name=t4 size=20 placeholder="Enter your email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>Mobile or Phone Number Validation</legend>
+<table>
+<tr><td>Mobile*<td><input type=text name=t5 size=20 placeholder="Enter your mobile no "pattern="[7-9]{1}[0-9]{9}" required></tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>Eduactional Details</legend>
+<table>
+<tr><td>Enter your Education<td><Select name=t6>
+<option value=BSC>BSC</option>
+<option value=MSc>MSc</option>
+<option value=BTech>BTech</option>
+</select>
+</tr>
+<tr><td>Uplaod your Photo<td><Input type=file name=t7></tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>CheckBox and Radio Button Validation</legend>
+<table>
+<tr><td>Gender*<td><input type=radio name=t8 id="G1" size=20 required >Male<input type=radio name=t8 id="G2"size=20>Female</tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>Identity Validation</legend>
+<table>
+<tr><td>Country</td>
+<td><input type="text" list="countryList" required>
+<datalist id="countryList" name=C1>
+<option value="India">India</option>
+<option value="Nepal">Nepal</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Afghanistan"> Afghanistan</option>
+</datalist>
+</td></tr>
+<tr><td>Address*<td><input type=text name=t9 placeholder="Enter your address" size=20 required></tr>
+<tr><td>Post code*<td><input type=number name=t10 size=20 placeholder="Enter your postal code"required></tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>Password Validation Using Pattern</legend>
+<tr><td>cateogry*<td><input type=radio name=t11 id="G1" size=20 required >teacher<input type=radio name=t11 id="G2"size=20>student</tr>
+<table><tr><td>Password*<td><input type=password name=t12 size=20 required></tr>
+</table>
+</fieldset>
+<br>
+<tr><td>Agree to T & C*<td><input type=checkbox name=t3 size=20 required></tr>
+<br>
+<table>
+<button class="button" onmouseover="style.color='blue'" onmouseout="style.color='pink'">Sign Up</button>
+
+</table>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+div {
+    width: 150px;
+   align: center
+    border: 1px solid Black;
+    padding: 5px;
+    margin: 15px;
+}
+
+h5
+{
+color: grey
+}
+
+fieldset
+{
+    display: block;
+    margin-left: 25px;
+    margin-right: 1050px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  
+}
+
+legend
+{
+color: green
+}
+
+td
+{
+padding:1px;
+width:200px;
+}
+
+input
+{
+border:1px solid green;
+}
+
+.button {
+   
+    width: 150px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    /*text-decoration: none;*/
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 375px;
+    cursor: pointer;
+}
